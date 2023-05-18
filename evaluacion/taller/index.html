@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://pregradoaulas.udistrital.edu.co/evaluacion/taller/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Taller - ManualAdmin</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Taller";
+        var mkdocs_page_input_path = "evaluacion\\taller.md";
+        var mkdocs_page_url = "/evaluacion/taller/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../img/logo1.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Inicio</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Gestión de plataforma</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../gestion/responsabilidades/">Responsabilidades</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Estructura básica</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estructura/categorias/">Categorias y cursos</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Roles y capacidades</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../roles/roles/">Roles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../roles/capacidades/">Capacidades</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Grupos</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../grupos/niveles/">Niveles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../grupos/creacion/">Creacion</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Evaluación</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Taller</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#modulo-de-taller">Módulo de taller</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#configuracion-de-modulo-taller">Configuración de modulo taller</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#general-del-modulo-taller">General del Módulo Taller</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ajustes-de-calificacion-del-modulo-taller">Ajustes de calificación del Módulo Taller</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#parametros-de-los-envios-del-modulo-taller">Parámetros de los envíos del Módulo Taller</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#configuracion-de-la-evaluacion-del-modulo-taller">Configuración de la evaluación del Módulo Taller</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#comentario-del-modulo-taller">Comentario del Módulo Taller</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#disponibilidad-del-modulo-taller">Disponibilidad del Módulo Taller</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#evaluacion-del-taller">Evaluación del taller</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tarea/">Tarea</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../consulta/">Consulta</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cuestionario/">Cuestionario</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../calificacion/">Calificación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Insignias</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../insignias/accionesgeneral/">Acciones en general</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../insignias/accionescategoria/">Acciones por categoría</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Menu administrador</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/adminsitio/">Administración del sitio</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/analitica/">Analitica</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/competencias/">Competencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/insignias/">Insignias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/h5p/">H5P</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/idioma/">Idioma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/apariencia/">Apariencia</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/informes/">Informes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/usuarios/">Usuarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/cursos/">Cursos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/extensiones/">Extensiones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/tipospreguntas/">Tipos de preguntas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/restricciones/">Restricciones</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Nosotros</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/planestic/">Planestic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/udistrital/">Udistrital</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/mesaayuda/">Mesa de ayuda</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/aulasvirtuales/">Aulas Virtuales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/edx/">EDX</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/campusvirtual/">Campus virtual</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">ManualAdmin</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Evaluación &raquo;</li>
+      <li>Taller</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="el-sistema-de-evaluacion-en-moodle">EL SISTEMA DE EVALUACIÓN EN MOODLE</h1>
+<p>Moodle cuenta con un conjunto de herramientas que le permiten al docente
+evaluar y monitorear el progreso de los estudiantes que están
+matriculados en sus cursos.</p>
+<p>Las herramientas que dispone el docente para evaluar y monitorear el
+progreso de los estudiantes son, Módulo de taller, tarea, Consulta y
+cuestionario los cuales son los más comunes para poder evaluar y medir
+el conocimiento y desempeño adquirido por el estudiante en el desarrollo
+de las diferentes temáticas propuestas por los docentes en los cursos de
+Moodle. Cada uno de estos módulos permite al docente configurar los
+diferentes parámetros que debe cumplir para su evaluación, calificación
+y envío.</p>
+<p>Como función de los administradores es importante contar las capacidades
+para poder orientar a los docentes en el uso de los diferentes módulos
+que le permitan poder evaluar y medir el conocimiento y desempeño de los
+estudiantes.</p>
+<h2 id="modulo-de-taller">Módulo de taller</h2>
+<p><img alt="" src="/img/sitio/image30.png" /></p>
+<p>Figura 31. Icono de taller en creación de actividades</p>
+<p>En el módulo de taller permite al docente plantear un taller en el cual
+el estudiante evalúa a otro estudiante a partir de ciertos criterios
+establecidos por el docente en el mismo taller.</p>
+<p><img alt="" src="/img/sitio/image31.png" /></p>
+<p>Figura 32. Opciones de configuración de modulo taller</p>
+<h3 id="configuracion-de-modulo-taller">Configuración de modulo taller</h3>
+<p>En el módulo de taller se cuenta con una variedad de opciones que
+permiten al docente realizar las configuraciones deseadas para envíos de
+trabajos y modos de calificación.</p>
+<p><img alt="" src="/img/sitio/image32.png" /></p>
+<p>Figura 33. Opción General del Módulo Taller</p>
+<h3 id="general-del-modulo-taller">General del Módulo Taller</h3>
+<p>En la opción General el docente debe colocar un título al taller y una
+descripción del taller, es importante colocar una descripción al taller
+ya que esto le indicará al estudiante de que trata el taller que se está
+planteado.</p>
+<p><img alt="" src="/img/sitio/image33.png" /></p>
+<p>Figura 34. Opción Ajustes de calificación del Módulo Taller</p>
+<h3 id="ajustes-de-calificacion-del-modulo-taller">Ajustes de calificación del Módulo Taller</h3>
+<p>En Ajustes de calificación el docente podrá establecer los valores de la
+nota que se dará en el taller, por ejemplo, en estrategia de
+calificaciones se puede colocar calificación por número de errores,
+calificación acumulativa, comentarios o rúbrica, además de seleccionar
+una estrategia de calificación también puede dar un valor de
+calificación por enviar el trabajo, y un mínimo requerido para aprobar
+la entrega y un valor de avaluación.</p>
+<p><img alt="" src="/img/sitio/image34.png" /></p>
+<p>Figura 35. Opción Parámetros de los envíos del Módulo Taller</p>
+<h3 id="parametros-de-los-envios-del-modulo-taller">Parámetros de los envíos del Módulo Taller</h3>
+<p>En Parámetros de los envíos se deben colocar las instrucciones
+establecidas para que el estudiante pueda enviar el trabajo, también se
+coloca los tipos de envíos si es por texto en línea, archivo adjunto y
+si estas deben ser obligatorios o no, se puede configurar un máximo de
+envíos del trabajo, junto con el formato del archivo que se acepta, el
+tamaño y si él envió lo puede hacer fuera de los tiempos establecidos.</p>
+<p><img alt="" src="/img/sitio/image35.png" /></p>
+<p>Figura 36. Opción configuración de la evaluación del Módulo Taller</p>
+<h3 id="configuracion-de-la-evaluacion-del-modulo-taller">Configuración de la evaluación del Módulo Taller</h3>
+<p>En la opción configuración de la evaluación se debe colocar las
+instrucciones de evaluación y el docente puede elegir si activar o no la
+autoevaluación del trabajo.</p>
+<p><img alt="" src="/img/sitio/image36.png" /></p>
+<p>Figura 37. Opción comentario del Módulo Taller</p>
+<h3 id="comentario-del-modulo-taller">Comentario del Módulo Taller</h3>
+<p>En comentarios, se puede realizar las configuraciones de las
+características que debe tener al momento de que los estudiantes o
+docente quiera realizar comentarios, desde la habilitación para subir
+documentos de retroalimentación hasta el tipo de formato que se admite
+con un tamaño máximo.</p>
+<p><img alt="" src="/img/sitio/image37.png" /></p>
+<p>Figura 38. Opción de Disponibilidad del Módulo Taller</p>
+<h3 id="disponibilidad-del-modulo-taller">Disponibilidad del Módulo Taller</h3>
+<p>En disponibilidad se puede establecer las fechas para el envío de los
+trabajos y las fechas para comenzar el proceso de evaluación de los
+trabajos.</p>
+<p><img alt="" src="/img/sitio/image38.png" /></p>
+<p>Figura 39. Fases de evaluación del taller</p>
+<h3 id="evaluacion-del-taller">Evaluación del taller</h3>
+<p>Al finalizar la configuración del taller, la plataforma le mostrará al
+docente una tabla donde se visualizan las fases de evaluación del
+taller, para la fase dos el docente debe asignar envíos, esto consiste
+en seleccionar qué estudiante va evaluar el trabajo del compañero y esto
+se realiza para todos los estudiantes que enviaron el trabajo, en la
+fase tres, los estudiantes deben comenzar a realizar la revisión y
+evaluación del trabajo de sus compañeros y en la fase cuatro el docente
+debe realizar un cálculo de los trabajos de los estudiantes. Para que
+todas las fases se cumplan deben estar chuleadas de color verde, si
+alguna no se cumple se marcaran con una X.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../grupos/creacion/" class="btn btn-neutral float-left" title="Creacion"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../tarea/" class="btn btn-neutral float-right" title="Tarea">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../grupos/creacion/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../tarea/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

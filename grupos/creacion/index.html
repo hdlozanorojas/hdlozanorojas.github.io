@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://pregradoaulas.udistrital.edu.co/grupos/creacion/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Creacion - ManualAdmin</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Creacion";
+        var mkdocs_page_input_path = "grupos\\creacion.md";
+        var mkdocs_page_url = "/grupos/creacion/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../img/logo1.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Inicio</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Gestión de plataforma</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../gestion/responsabilidades/">Responsabilidades</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Estructura básica</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estructura/categorias/">Categorias y cursos</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Roles y capacidades</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../roles/roles/">Roles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../roles/capacidades/">Capacidades</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Grupos</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../niveles/">Niveles</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Creacion</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#creacion-de-grupos">Creación de grupos</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Evaluación</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../evaluacion/taller/">Taller</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../evaluacion/tarea/">Tarea</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../evaluacion/consulta/">Consulta</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../evaluacion/cuestionario/">Cuestionario</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../evaluacion/calificacion/">Calificación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Insignias</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../insignias/accionesgeneral/">Acciones en general</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../insignias/accionescategoria/">Acciones por categoría</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Menu administrador</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/adminsitio/">Administración del sitio</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/analitica/">Analitica</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/competencias/">Competencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/insignias/">Insignias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/h5p/">H5P</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/idioma/">Idioma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/apariencia/">Apariencia</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/informes/">Informes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/usuarios/">Usuarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/cursos/">Cursos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/extensiones/">Extensiones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/tipospreguntas/">Tipos de preguntas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../menuadmin/restricciones/">Restricciones</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Nosotros</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/planestic/">Planestic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/udistrital/">Udistrital</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/mesaayuda/">Mesa de ayuda</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/aulasvirtuales/">Aulas Virtuales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/edx/">EDX</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/campusvirtual/">Campus virtual</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">ManualAdmin</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Grupos &raquo;</li>
+      <li>Creacion</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="los-grupos-en-moodle">LOS GRUPOS EN MOODLE</h1>
+<p>Los grupos son una característica de Moodle que permite tanto al usuario
+de rol profesor o administrador ordenar a los estudiantes de un mismo
+curso en diferentes grupos, pudiendo tomarse como ejemplo la misma
+asignatura, pero con diferentes grupos asignados.</p>
+<p>Esto permite que cada uno de estos grupos compartan dentro del mismo
+contexto, los mismos recursos (actividades, foros, wikis, quices, etc) y
+que se puedan tener los libros de calificaciones filtrados y organizados
+por grupos de estudiantes, permitiendo verificar entregas, ejercicios y
+demás elementos evaluables dentro del mismo contexto.</p>
+<h2 id="creacion-de-grupos">Creación de grupos</h2>
+<p>Para la creación de los grupos el profesor o administrador deberá
+realizar los siguientes pasos.</p>
+<ol>
+<li>En "Administración del curso" dentro del menú administrador, deberá
+    dirigirse al Módulo "Usuarios" y dentro de este al Menú "Grupos".
+    (ver Fig. 24).</li>
+</ol>
+<p><img alt="" src="/img/sitio/image23.png" /></p>
+<p>Figura 24. Opción "Grupos" en "Administración del curso" en Moodle.</p>
+<ol>
+<li>En el menú de "Grupos" se encuentran la distribución general de los
+    grupos y cada uno de sus integrantes. Como se puede apreciar en la
+    Fig. 25. aparece el identificador Corto del curso en la parte
+    superior, en la parte inferior existen tres formas de crear grupos:</li>
+</ol>
+<p><img alt="" src="/img/sitio/image24.png" /></p>
+<p>Figura 25. Grupos" en módulo del grupo dentro de un curso en Moodle</p>
+<ol>
+<li><strong>Crear grupo:</strong> En esta opción se crea el grupo (espacio donde se
+    organizan dependiendo de los estudiantes) y deben tenerse en cuenta
+    las siguientes opciones (ver Fig. 26):</li>
+</ol>
+<p><img alt="" src="/img/sitio/image25.png" /></p>
+<p>Figura 26. Opción "Crear grupos" en el módulo del grupo dentro de un
+curso en Moodle.</p>
+<ul>
+<li>
+<p><strong>Nombre del grupo:</strong> Este será el nombre con el cual se podrán
+    configurar cada una de las actividades y las restricciones de acceso
+    a las mismas dentro del curso</p>
+</li>
+<li>
+<p><strong>Número de identificación del grupo:</strong> No es obligatorio y se
+    utiliza en caso de comparar el grupo con un sistema externo o algún
+    aplicativo externo al Moodle.</p>
+</li>
+<li>
+<p><strong>Descripción del grupo:</strong> Un espacio para brindar más información
+    del grupo y aparecerá antes de consolidar la matrícula de los
+    estudiantes.</p>
+</li>
+<li>
+<p><strong>Clave de matriculación:</strong> Esta es una de las opciones más
+    importantes puesto que permite que los estudiantes sean quienes se
+    matriculen al curso y hagan parte de un grupo específicamente, lo
+    que facilita el proceso al profesor. La clave se debe ajustar
+    diferente para cada grupo y solo los del grupo podrán conocerla a
+    través de email o canal de comunicación. Se puede profundizar en
+    esta configuración en el apartado uno de este documento.</p>
+</li>
+<li>
+<p><strong>Mensajes de grupo:</strong> Esta opción indica si los estudiantes de un
+    grupo pueden comunicarse con los de otros grupos o no.</p>
+</li>
+<li>
+<p><strong>Ocultar imagen:</strong> Se habilita o deshabilita la imagen del curso en
+    caso de existir.</p>
+</li>
+<li>
+<p><strong>Nueva imagen:</strong> Esta imagen que deberá ser de 100x100 píxeles
+    permite identificar cada uno de los grupos con un logo o imagen
+    identificadora.</p>
+<ol>
+<li><strong>Crear grupo automáticamente:</strong> En esta opción se crea el grupo
+    de forma automática (si no existiese preferencia sobre su
+    organización o alguna planeación por parte de la universidad) y
+    deben tenerse en cuenta las siguientes opciones (ver Fig. 27):</li>
+</ol>
+</li>
+</ul>
+<p><img alt="" src="/img/sitio/image26.png" /></p>
+<p>Figura 27. Opción "Crear grupos automáticamente" en módulo de grupos
+dentro de un curso en Moodle.</p>
+<ul>
+<li>
+<p><strong>Esquema de denominación:</strong> Es la forma en la que se nombran los
+    &gt; grupos. Un esquema para nombrar puede crearse automáticamente. #
+    &gt; es reemplazado por números consecutivos, y @ es reemplazado por
+    &gt; letras. Por ejemplo:</p>
+<ul>
+<li>
+<p>Grupo <strong>@</strong> creará grupos con nombres Grupo A, Grupo B, Grupo
+    C...</p>
+</li>
+<li>
+<p>Grupo <strong>#</strong> creará grupos con nombres Grupo 1, Grupo 2, Grupo
+    3...</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Creación automática basada en:</strong> En este apartado se puede
+    &gt; determinar si se crean los grupos por número de grupos o número de
+    &gt; miembros por grupo.</p>
+</li>
+</ul>
+<p><img alt="" src="/img/sitio/image27.png" /></p>
+<p>Figura 28. Módulo "General" al crear un grupo automáticamente</p>
+<ul>
+<li>
+<p><strong>Número de grupos o miembros por grupo:</strong> Se determina la cantidad
+    de miembros se asignan de manera automática en cada grupo o cuántos
+    grupos se determina sacar de la totalidad de los miembros del curso.</p>
+</li>
+<li>
+<p><strong>Mensajes de grupo:</strong> Es la opción que permite saber si entre los
+    diferentes grupos se pueden comunicar o no.</p>
+</li>
+<li>
+<p><strong>Seleccionar los miembros con rol:</strong> Se determina si la acción
+    automática va a aplicarse sobre algún rol en específico o sobre
+    todos los miembros del grupo.</p>
+</li>
+<li>
+<p><strong>Asignar miembros:</strong> En esta parte se puede determinar los
+    criterios sobre los cuales se empezarán a agregar a cada grupo los
+    miembros, pudiendo ser de manera aleatoria o en orden alfabético
+    (tanto a nivel de nombre apellido, apellido nombre o mediante el
+    ID).</p>
+</li>
+</ul>
+<p><img alt="" src="/img/sitio/image28.png" /></p>
+<p>Figura 29. Modulo "Miembros del grupo" al crear un grupo automáticamente
+en un curso en Moodle</p>
+<ol>
+<li>
+<p><strong>Importar grupos:</strong> Los grupos pueden ser importados a través de un
+    archivo plano (como una hoja separada por comas .csv), seleccionado
+    el archivo correspondiente (ver Fig. 30) con las siguientes
+    indicaciones:</p>
+</li>
+<li>
+<p>Cada línea del archivo debe corresponder a un registro.</p>
+</li>
+<li>
+<p>Cada registro debe corresponder a una serie de datos separados por
+    comas.</p>
+</li>
+<li>
+<p>El primer registro debe corresponder a los nombres de campos de la
+    configuración básica de un grupo que se definen en el resto del
+    archivo de texto.</p>
+</li>
+<li>
+<p>Es obligatorio el campo de grupo.</p>
+</li>
+<li>
+<p>Los campos de descripción, clave de matriculación, imagen e imagen
+    oculta son opcionales.</p>
+</li>
+</ol>
+<p><img alt="" src="/img/sitio/image29.png" /></p>
+<p>Figura 30. Opción "Importar grupos" en módulo de grupos dentro de un
+curso en Moodle</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../niveles/" class="btn btn-neutral float-left" title="Niveles"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../evaluacion/taller/" class="btn btn-neutral float-right" title="Taller">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../niveles/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../evaluacion/taller/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

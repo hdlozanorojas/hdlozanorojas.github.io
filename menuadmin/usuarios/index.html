@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://pregradoaulas.udistrital.edu.co/menuadmin/usuarios/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Usuarios - ManualAdmin</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Usuarios";
+        var mkdocs_page_input_path = "menuadmin\\usuarios.md";
+        var mkdocs_page_url = "/menuadmin/usuarios/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../img/logo1.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Inicio</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Gestión de plataforma</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../gestion/responsabilidades/">Responsabilidades</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Estructura básica</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../estructura/categorias/">Categorias y cursos</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Roles y capacidades</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../roles/roles/">Roles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../roles/capacidades/">Capacidades</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Grupos</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../grupos/niveles/">Niveles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../grupos/creacion/">Creacion</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Evaluación</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../evaluacion/taller/">Taller</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../evaluacion/tarea/">Tarea</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../evaluacion/consulta/">Consulta</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../evaluacion/cuestionario/">Cuestionario</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../evaluacion/calificacion/">Calificación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Insignias</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../insignias/accionesgeneral/">Acciones en general</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../insignias/accionescategoria/">Acciones por categoría</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Menu administrador</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../adminsitio/">Administración del sitio</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../analitica/">Analitica</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../competencias/">Competencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../insignias/">Insignias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../h5p/">H5P</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../idioma/">Idioma</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../apariencia/">Apariencia</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../informes/">Informes</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Usuarios</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#creacion-usuarios">Creación Usuarios</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#examinar-lista-de-usuarios">Examinar lista de usuarios</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#buscar-usuarios">Buscar usuarios</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#realizar-acciones-sobre-un-usuario-registrado-en-plataforma">Realizar acciones sobre un usuario registrado en plataforma.</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#acciones-de-usuarios-masivas">Acciones de usuarios masivas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#agregar-un-usuario">Agregar un usuario</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#subir-usuarios">Subir usuarios</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#subir-imagenes-de-los-usuarios">Subir imágenes de los usuarios</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cursos/">Cursos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../extensiones/">Extensiones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tipospreguntas/">Tipos de preguntas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../restricciones/">Restricciones</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Nosotros</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/planestic/">Planestic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/udistrital/">Udistrital</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/mesaayuda/">Mesa de ayuda</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/aulasvirtuales/">Aulas Virtuales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/edx/">EDX</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../nosotros/campusvirtual/">Campus virtual</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">ManualAdmin</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Menu administrador &raquo;</li>
+      <li>Usuarios</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="usuarios">Usuarios</h1>
+<p>En el menú de usuarios se encuentra toda la información que se debe
+tener en cuenta a la hora de subir a cada uno de los estudiantes dentro
+de la plataforma universitaria, teniendo especial cuidado en cada dato
+suministrado. Esto se va a ver con más detalle en el siguiente capítulo
+del presente manual.</p>
+<ul>
+<li><strong>Carga masiva:</strong> Generalmente corresponden a usuarios de primer
+    semestre y en casos esporádicos, a usuarios que provienen de
+    reintegros o que por razones particulares no han usado la plataforma
+    y, para el caso de docentes, aquellos que son nuevos y/o no han
+    hecho uso de la plataforma anteriormente. Es importante recalcar que
+    única y exclusivamente se crearán usuarios con el correo electrónico
+    institucional con el dominio <strong>\@udistrital.edu.co</strong> o
+    <strong>\@correo.udistrital.edu.co</strong>.</li>
+</ul>
+<p>Para la creación de usuarios se deben tener en cuenta los siguientes
+campos:</p>
+<ul>
+<li>
+<p><strong>username:</strong> correos institucionales</p>
+</li>
+<li>
+<p><strong>autenticación:</strong> OAUTH2</p>
+</li>
+<li>
+<p><strong>userid:</strong> código estudiantil</p>
+</li>
+</ul>
+<h2 id="creacion-usuarios">Creación Usuarios</h2>
+<p>Para la creación de usuarios, inicialmente se debe bajar el listado de
+estudiantes activos del sistema CÓNDOR, posteriormente, se debe remitir
+el mismo listado de usuarios que nos genera el sistema como <strong>solicitud
+para la creación y el cargue de usuarios</strong> a la Facultad que
+corresponda. A continuación, se relaciona los datos de contacto de cada
+facultad.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Facultad</strong></th>
+<th align="center"><strong>Web Master</strong></th>
+<th align="center"><strong>Correo</strong></th>
+<th align="center"><strong>Correo Decanatura</strong></th>
+<th align="center"><strong>Extensión</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Medio Ambiente</td>
+<td align="center">Sandra Isabel Parra Valderrama</td>
+<td align="center"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#105;&#115;&#97;&#98;&#101;&#108;&#112;&#64;&#117;&#100;&#105;&#115;&#116;&#114;&#105;&#116;&#97;&#108;&#46;&#101;&#100;&#117;&#46;&#99;&#111;">&#115;&#105;&#115;&#97;&#98;&#101;&#108;&#112;&#64;&#117;&#100;&#105;&#115;&#116;&#114;&#105;&#116;&#97;&#108;&#46;&#101;&#100;&#117;&#46;&#99;&#111;</a></td>
+<td align="center">dmedioa@udistrital.edu.co</td>
+<td align="center"><p>Secretaria: 4000</p><p>Web Master: 4001</p></td>
+</tr>
+<tr>
+<td align="center">Ciencias y Educación</td>
+<td align="center">Proyecto PAET</td>
+<td align="center"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#97;&#101;&#116;&#64;&#99;&#111;&#114;&#114;&#101;&#111;&#46;&#117;&#100;&#105;&#115;&#116;&#114;&#105;&#116;&#97;&#108;&#46;&#101;&#100;&#117;&#46;&#99;&#111;">&#112;&#97;&#101;&#116;&#64;&#99;&#111;&#114;&#114;&#101;&#111;&#46;&#117;&#100;&#105;&#115;&#116;&#114;&#105;&#116;&#97;&#108;&#46;&#101;&#100;&#117;&#46;&#99;&#111;</a></td>
+<td align="center">dciencia@udistrital.edu.co</td>
+<td align="center"><p>Decanatura 3030</p><p>PAET 3064</p></td>
+</tr>
+<tr>
+<td align="center">Tecnológica</td>
+<td align="center">Andres Morales</td>
+<td align="center"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#117;&#108;&#97;&#115;&#118;&#105;&#114;&#116;&#117;&#97;&#108;&#101;&#115;&#116;&#101;&#99;&#110;&#111;&#64;&#117;&#100;&#105;&#115;&#116;&#114;&#105;&#116;&#97;&#108;&#46;&#101;&#100;&#117;&#46;&#99;&#111;">&#97;&#117;&#108;&#97;&#115;&#118;&#105;&#114;&#116;&#117;&#97;&#108;&#101;&#115;&#116;&#101;&#99;&#110;&#111;&#64;&#117;&#100;&#105;&#115;&#116;&#114;&#105;&#116;&#97;&#108;&#46;&#101;&#100;&#117;&#46;&#99;&#111;</a></td>
+<td align="center">dectecnologica@udistrital.edu.co</td>
+<td align="center">Sistemas 5200</td>
+</tr>
+<tr>
+<td align="center">Ingeniería</td>
+<td align="center">Gabriel Rodríguez</td>
+<td align="center">No disponible</td>
+<td align="center">decano_ing@udistrital.edu.co</td>
+<td align="center">1502</td>
+</tr>
+<tr>
+<td align="center">Artes</td>
+<td align="center">Julieth Mallerly Mateus Torres</td>
+<td align="center"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#109;&#109;&#97;&#116;&#101;&#117;&#115;&#116;&#64;&#117;&#100;&#105;&#115;&#116;&#114;&#105;&#116;&#97;&#108;&#46;&#101;&#100;&#117;&#46;&#99;&#111;">&#106;&#109;&#109;&#97;&#116;&#101;&#117;&#115;&#116;&#64;&#117;&#100;&#105;&#115;&#116;&#114;&#105;&#116;&#97;&#108;&#46;&#101;&#100;&#117;&#46;&#99;&#111;</a></td>
+<td align="center"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#101;&#99;&#97;&#110;&#97;&#116;&#117;&#114;&#97;&#95;&#97;&#114;&#116;&#101;&#115;&#64;&#117;&#100;&#105;&#115;&#116;&#114;&#105;&#116;&#97;&#108;&#46;&#101;&#100;&#117;&#46;&#99;&#111;">&#100;&#101;&#99;&#97;&#110;&#97;&#116;&#117;&#114;&#97;&#95;&#97;&#114;&#116;&#101;&#115;&#64;&#117;&#100;&#105;&#115;&#116;&#114;&#105;&#116;&#97;&#108;&#46;&#101;&#100;&#117;&#46;&#99;&#111;</a></td>
+<td align="center"><p>6623 Comité</p><p>Secretaría Académica: 6607</p></td>
+</tr>
+</tbody>
+</table>
+<p>Tabla 6. Directorio Administradores Moodle por facultad</p>
+<p>Para acceder a la creación de usuarios debemos loguearnos con usuario y
+contraseña o usando la autenticación de Google (usando la cuenta
+institucional).</p>
+<p>Una vez nos hemos autenticado satisfactoriamente en el sistema,
+accedemos a la creación de usuarios usando la ruta: <em>Administración de
+sitio > Usuarios</em></p>
+<p>El administrador de facultad tendrá disponibles las siguientes opciones:</p>
+<p><img alt="" src="/img/menuadmin/image22.png" /></p>
+<p>Figura 90. Opciones en administración de usuarios para el administrador
+de facultad.</p>
+<ul>
+<li>
+<p><strong>Examinar lista de usuarios:</strong> Permite listar los usuarios
+    registrados en plataforma, sin importar su rol.</p>
+</li>
+<li>
+<p><strong>Acciones de usuario masivas:</strong> Permite realizar acciones sobre uno
+    o más usuarios de una facultad. Un administrador de facultad podrá:
+    Confirmar, Mostrar en página, Descargar o Forzar el cambio de
+    contraseña de uno o más usuarios.</p>
+</li>
+<li>
+<p><strong>Agregar un usuario:</strong> Permite agregar un usuario a la vez,
+    completando el formulario de registro.</p>
+</li>
+<li>
+<p><strong>Subir usuarios:</strong> Permite cargar de manera masiva, varios usuarios
+    a la vez. Es importante definir muy bien los campos en el archivo
+    .csv</p>
+</li>
+<li>
+<p><strong>Subir imágenes de los usuarios:</strong> Permite cargar de manera masiva
+    imágenes de perfil de usuarios.</p>
+</li>
+</ul>
+<h2 id="examinar-lista-de-usuarios">Examinar lista de usuarios</h2>
+<p>En la interfaz de Examinar lista de usuarios podremos:</p>
+<ul>
+<li>
+<p>Buscar usuarios.</p>
+</li>
+<li>
+<p>Realizar acciones sobre un usuario registrado en plataforma</p>
+</li>
+</ul>
+<h3 id="buscar-usuarios">Buscar usuarios</h3>
+<p>Para realizar la búsqueda podemos usar el nombre del usuario, apellido,
+correo electrónico, nombre de usuario o cualquier otro dato que permita
+identificarlo. La plataforma arrojará (si las hay) todas las
+concordancias con la información suministrada, procure usar solamente
+una palabra para buscar y tenga presente las tildes.</p>
+<p><img alt="Interfaz de usuario gráfica, Aplicación Descripción generada
+automáticamente" src="/img/menuadmin/image23.png" /></p>
+<p>Figura 91. Buscar usuarios registrados en plataforma organizados por
+último acceso</p>
+<p><img alt="Interfaz de usuario gráfica, Aplicación Descripción generada
+automáticamente" src="/img/menuadmin/image24.png" /></p>
+<p>Figura 92. Listado de usuarios registrados en plataforma organizados por
+último acceso</p>
+<h3 id="realizar-acciones-sobre-un-usuario-registrado-en-plataforma">Realizar acciones sobre un usuario registrado en plataforma.</h3>
+<p>El administrador de facultad podrá:</p>
+<p>Suspender una cuenta de usuario haciendo clic en el icono:
+<img alt="" src="/img/menuadmin/image25.png" /></p>
+<p>Editar la información de usuario, siempre y cuando tenga menos permisos
+que el administrador de plataforma, es decir, no podrá editar los
+usuarios de otros administradores o de super administradores, solamente
+podrá editar usuarios de docentes, creadores de cursos, estudiantes e
+invitados (siempre y cuando la plataforma tenga habilitado el acceso a
+invitados).</p>
+<h2 id="acciones-de-usuarios-masivas">Acciones de usuarios masivas</h2>
+<p>Las acciones de usuario masiva tienen la forma de buscar información de
+cada uno de los usuarios y a partir de esto se puede ver un listado con
+cada uno de los usuarios y poder realizar acciones a un determinado
+grupo de usuarios. Estas acciones van desde borrar, agregar a una
+cohorte, enviar mensajes, descargar información y/o forzar cambio de
+contraseña.</p>
+<p><img alt="Interfaz de usuario gráfica, Aplicación, Teams Descripción generada
+automáticamente" src="/img/menuadmin/image26.png" /></p>
+<p>Figura 93. Módulo de acciones masivas</p>
+<h2 id="agregar-un-usuario">Agregar un usuario</h2>
+<p>Crear un usuario es una de las tareas fundamentales del LMS Moodle. Aquí
+en esta parte se cuenta con la opción de crear un usuario único con las
+características que se hayan determinado para tal fin. A diferencia del
+cargue masivo de usuarios esta opción brinda un conjunto de cuadros de
+texto con la información que se desea adicionar de manera independiente
+para la creación de un usuario, recomendada para cuando se establecerán
+permisos de docente o administrador a la misma plataforma.</p>
+<p>Es importante tener en cuenta que los usuarios deben estar creados
+acorde a las políticas y lineamientos planteados en el actual documento,
+en una sección anterior. Por otro lado, también se debe tener en cuenta
+que las contraseñas deben tener un tamaño mínimo de 8 caracteres,
+adicional debe tener mínimo una mayúscula y un carácter especial.</p>
+<p><img alt="Interfaz de usuario gráfica, Texto, Aplicación Descripción generada
+automáticamente" src="/img/menuadmin/image27.png" /></p>
+<p>Figura 94. Opciones para agregar un usuario</p>
+<p><img alt="Interfaz de usuario gráfica, Texto, Aplicación, Correo electrónico
+Descripción generada
+automáticamente" src="/img/menuadmin/image28.png" /></p>
+<p>Figura 95. Opciones para agregar a un usuario 2</p>
+<h2 id="subir-usuarios">Subir usuarios</h2>
+<p><img alt="" src="/img/menuadmin/image29.png" /></p>
+<p>Figura 96. Subir usuarios masivos</p>
+<p>Para subir usuarios masivamente debemos organizar un archivo en Excel en
+formato .csv para el correcto cargue a plataforma. Se recomienda
+descargar el archivo que ofrece la plataforma: sample.csv.</p>
+<p>Una vez organizado el archivo, arrastrarlo hacia el campo de carga con
+la flecha azul señalando hacia abajo y presione en Subir usuarios (se
+recomienda no mover los campos: Delimitador y Codificación)</p>
+<p><img alt="Tabla Descripción generada
+automáticamente" src="/img/menuadmin/image30.png" /></p>
+<p>Figura 97. Ejemplo datos para cargue por csv</p>
+<p>Nótese que todos los campos están separados por comas en la primera
+columna, cada campo tiene una variable reservada que le da a entender a
+la plataforma a que hace referencia ese campo, estos son algunos
+ejemplos de variables:</p>
+<ul>
+<li>
+<p>Campos obligatorios: username, firstname, lastname, email</p>
+</li>
+<li>
+<p>Campos opcionales comunes: course1, group1, cohort1</p>
+</li>
+</ul>
+<p>Otros campos adicionales:</p>
+<p>institution,department,city,country,lang,auth,timezone,idnumber,
+icq,phone1,phone2,address,ur,description,mailformat,maildisplay,
+maildigest,htmleditor,autosubscribe,interests</p>
+<h2 id="subir-imagenes-de-los-usuarios">Subir imágenes de los usuarios</h2>
+<p><img alt="Interfaz de usuario gráfica, Texto, Aplicación Descripción generada
+automáticamente" src="/img/menuadmin/image31.png" /></p>
+<p>Figura 98. Cargue masiva de imágenes de usuario</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../informes/" class="btn btn-neutral float-left" title="Informes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../cursos/" class="btn btn-neutral float-right" title="Cursos">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../informes/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../cursos/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
