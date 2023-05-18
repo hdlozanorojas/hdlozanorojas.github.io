@@ -6,102 +6,212 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/cursos/calificaciones/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/estructura/calificaciones/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/cursos/configuracion/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/estructura/configuracion/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/cursos/copiasseguridad/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/estructura/copiasseguridad/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/cursos/grupos/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/estructura/grupos/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/cursos/matriculacion/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/estructura/matriculacion/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/cursos/reinicio/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/estructura/reinicio/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/nosotros/about/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/evaluacion/calificaciones/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/recursos/archivo/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/evaluacion/configuracion/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/recursos/asistencia/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/evaluacion/copiasseguridad/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/recursos/basedatos/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/evaluacion/grupos/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/recursos/bigbluebutton/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/evaluacion/matriculacion/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/recursos/carpeta/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/evaluacion/reinicio/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/recursos/consulta/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/grupos/mesaayuda/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/recursos/etiqueta/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/grupos/solicitudes/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/recursos/h5p/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/insignias/calificaciones/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/recursos/libro/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/insignias/configuracion/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/recursos/pagina/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/insignias/copiasseguridad/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/recursos/url/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/insignias/grupos/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/soporte/mesaayuda/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/insignias/matriculacion/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pregradoaulas.udistrital.edu.co/soporte/solicitudes/</loc>
+         <loc>https://pregradoaulas.udistrital.edu.co/insignias/reinicio/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/menuadmin/adminsitio/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/menuadmin/admintodo/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/menuadmin/analitica/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/menuadmin/competencias/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/nosotros/aulasvirtuales/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/nosotros/campusvirtual/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/nosotros/edx/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/nosotros/mesaayuda/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/nosotros/nosotros/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/nosotros/planestic/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/nosotros/udistrital/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/roles/archivo/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/roles/asistencia/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/roles/basedatos/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/roles/bigbluebutton/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/roles/carpeta/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/roles/consulta/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/roles/etiqueta/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/roles/h5p/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/roles/libro/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/roles/pagina/</loc>
+         <lastmod>2023-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pregradoaulas.udistrital.edu.co/roles/url/</loc>
          <lastmod>2023-05-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
