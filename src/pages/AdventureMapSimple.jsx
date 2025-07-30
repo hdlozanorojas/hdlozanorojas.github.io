@@ -19,6 +19,9 @@ import {
 } from 'lucide-react'
 import { useGame } from '../context/GameContext'
 import './AdventureMap.css'
+// Importar assets
+import backgroundImage from '../assets/background 1.webp'
+import logoImage from '../assets/logo33.png'
 
 // Componente ProgressBar simple inline
 const ProgressBar = ({ progress, height = '8px', color = '#4F46E5' }) => (
@@ -42,6 +45,10 @@ const ProgressBar = ({ progress, height = '8px', color = '#4F46E5' }) => (
 const AdventureMapSimple = () => {
   const navigate = useNavigate()
   const { user, challenges, resetProgress } = useGame()
+  
+  // Debug para ver los valores actuales
+  console.log('🎮 AdventureMapSimple - user:', user)
+  console.log('🎮 AdventureMapSimple - challenges:', challenges)
   const [showLogoutModal, setShowLogoutModal] = useState(false)
   
   const handleLogout = () => {
@@ -66,6 +73,7 @@ const AdventureMapSimple = () => {
   const completedChallenges = Object.values(challenges).filter(challenge => challenge.completed)
   const totalChallenges = Object.keys(challenges).length
   const totalPoints = user.progress.totalPoints
+  console.log('🏆 Total Points mostrados en header:', totalPoints)
   const progressPercentage = (completedChallenges.length / totalChallenges) * 100
 
   const programs = [
@@ -151,25 +159,30 @@ const AdventureMapSimple = () => {
         transition={{ duration: 0.6 }}
       >
         <div className="header-content">
-          <div className="user-info">
-            <User className="user-icon" />
-            <span>¡Hola, {user.name}!</span>
+          <div className="logo-section">
+            <img src={logoImage} alt="Universidad Central" className="header-logo" />
           </div>
           
-          <div className="progress-section">
-            <div className="progress-stats">
-              <span>{completedChallenges.length}/{totalChallenges} Desafíos</span>
-              <Trophy className="trophy-icon" />
-              <span>{totalPoints} puntos</span>
+          <div className="header-main-content">
+            <div className="user-info">
+              <User className="user-icon" />
+              <span>¡Hola, {user.name}!</span>
             </div>
-            <ProgressBar 
-              progress={progressPercentage} 
-              height="8px"
-              color="#4F46E5"
-            />
-          </div>
-          
-          <div className="nav-buttons">
+            
+            <div className="progress-section">
+              <div className="progress-stats">
+                <span>{completedChallenges.length}/{totalChallenges} Desafíos</span>
+                <Trophy className="trophy-icon" />
+                <span>{totalPoints} puntos</span>
+              </div>
+              <ProgressBar 
+                progress={progressPercentage} 
+                height="8px"
+                color="#4F46E5"
+              />
+            </div>
+            
+            <div className="nav-buttons">
             <button 
               className="nav-btn"
               onClick={() => navigate('/')}
@@ -200,6 +213,7 @@ const AdventureMapSimple = () => {
                 <LogOut size={20} />
               </button>
             )}
+          </div>
           </div>
         </div>
       </motion.header>

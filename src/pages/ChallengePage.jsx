@@ -89,6 +89,7 @@ const ChallengePage = () => {
   }, [programId, startChallenge])
 
   const handleChallengeComplete = (score) => {
+    console.log('🎯 ChallengePage - Completando desafío:', { programId, score })
     setCurrentScore(score)
     setIsCompleted(true)
     setShowResults(true)

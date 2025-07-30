@@ -81,6 +81,9 @@ function gameReducer(state, action) {
     
     case 'COMPLETE_CHALLENGE':
       const { challengeId, points } = action.payload
+      console.log('🎯 COMPLETANDO DESAFÍO:', { challengeId, points })
+      console.log('🔍 Estado actual challenges:', state.challenges)
+      
       const updatedChallenges = {
         ...state.challenges,
         [challengeId]: {
@@ -90,12 +93,15 @@ function gameReducer(state, action) {
         }
       }
       
+      console.log('✨ Challenges actualizados:', updatedChallenges)
+      
       const completedChallenges = [...state.user.progress.completedChallenges]
       if (!completedChallenges.includes(challengeId)) {
         completedChallenges.push(challengeId)
       }
       
       const totalPoints = Object.values(updatedChallenges).reduce((sum, challenge) => sum + challenge.points, 0)
+      console.log('📊 Total points calculado:', totalPoints)
       
       // Verificar insignias
       const updatedBadges = state.badges.map(badge => {
@@ -204,6 +210,7 @@ export const GameProvider = ({ children }) => {
   
   // Guardar progreso en localStorage cuando cambie el estado
   useEffect(() => {
+    console.log('💾 Guardando estado en localStorage:', state)
     localStorage.setItem('desafio-ia-progress', JSON.stringify(state))
   }, [state])
   
