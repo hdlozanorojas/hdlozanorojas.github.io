@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import HomePage from './pages/HomePage'
 import AdventureMap from './pages/AdventureMap'
@@ -14,7 +14,7 @@ import './App.css'
 function App() {
   return (
     <GameProvider>
-      <Router basename="/hdlozanorojas.github.io">
+      <Router>
         <div className="app">
           <motion.div
             initial={{ opacity: 0 }}
