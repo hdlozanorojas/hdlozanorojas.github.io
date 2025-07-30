@@ -14,7 +14,7 @@ import './App.css'
 function App() {
   return (
     <GameProvider>
-      <Router basename="/">
+      <Router basename="/hdlozanorojas.github.io">
         <div className="app">
           <motion.div
             initial={{ opacity: 0 }}
