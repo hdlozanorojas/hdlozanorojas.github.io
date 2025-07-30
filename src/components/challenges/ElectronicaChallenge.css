@@ -1,0 +1,990 @@
+/* ElectronicaChallenge.css */
+.electronica-challenge {
+  width: 100%;
+  min-height: calc(100vh - 140px);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  color: white;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Headers de fase */
+.phase-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 998;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 0;
+}
+
+.phase-icon {
+  color: #3B82F6;
+  margin-bottom: 1rem;
+}
+
+.phase-icon.spinning {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.phase-header h2, .phase-header h3 {
+  margin: 0.5rem 0;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.phase-header p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.challenge-progress {
+  background: rgba(59, 130, 246, 0.3);
+  color: #60A5FA;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  display: inline-block;
+  font-weight: 600;
+}
+
+/* Fase de Instrucciones */
+.instructions-content {
+  max-width: 100%;
+  margin: 0;
+  padding: 0 2rem 2rem;
+}
+
+.instruction-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.step {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+  text-align: center;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  border-color: #3B82F6;
+  background: rgba(59, 130, 246, 0.15);
+}
+
+.step-icon {
+  color: #60A5FA;
+  margin-bottom: 1.5rem;
+}
+
+.step h3 {
+  margin: 1rem 0;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.step p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Grid de Desafíos */
+.challenges-overview h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.challenge-card {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 2rem;
+  cursor: pointer;
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(15px);
+  position: relative;
+}
+
+.challenge-card:hover {
+  border-color: #60A5FA;
+  background: rgba(59, 130, 246, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(59, 130, 246, 0.2);
+}
+
+.challenge-card.completed {
+  border-color: #34D399;
+  background: rgba(16, 185, 129, 0.25);
+}
+
+.challenge-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.challenge-header h4 {
+  color: white;
+  margin: 0;
+  flex: 1;
+  font-size: 1.3rem;
+}
+
+.difficulty {
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.difficulty.fácil {
+  background: rgba(34, 197, 94, 0.3);
+  color: #4ADE80;
+  border: 1px solid #4ADE80;
+}
+
+.difficulty.medio {
+  background: rgba(251, 191, 36, 0.3);
+  color: #FBBF24;
+  border: 1px solid #FBBF24;
+}
+
+.difficulty.avanzado {
+  background: rgba(239, 68, 68, 0.3);
+  color: #F87171;
+  border: 1px solid #F87171;
+}
+
+.challenge-card p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.challenge-objective {
+  background: rgba(59, 130, 246, 0.2);
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  border-left: 4px solid #60A5FA;
+}
+
+.challenge-objective strong {
+  color: #60A5FA;
+}
+
+.challenge-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.points {
+  color: #60A5FA;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.completed-icon {
+  color: #34D399;
+}
+
+/* Fase de Construcción */
+.building-workspace {
+  display: grid;
+  grid-template-columns: minmax(300px, 35%) 1fr;
+  gap: 1rem;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.components-panel {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 1.5rem;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  height: fit-content;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+.components-panel h4 {
+  color: white;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.component-category {
+  margin-bottom: 2rem;
+}
+
+.component-category h5 {
+  color: #60A5FA;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+  font-size: 1.1rem;
+}
+
+.component-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.component-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.component-item:hover {
+  background: rgba(59, 130, 246, 0.25);
+  border-color: #60A5FA;
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2);
+}
+
+.component-icon {
+  font-size: 1.5rem;
+  min-width: 40px;
+  text-align: center;
+}
+
+.component-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.component-name {
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.component-ai {
+  color: #60A5FA;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+/* Canvas del Circuito */
+.circuit-canvas {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  overflow: hidden;
+}
+
+.canvas-header {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+}
+
+.canvas-header h4 {
+  color: white;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.canvas-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.control-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: #60A5FA;
+  transform: translateY(-2px);
+}
+
+.control-btn.primary {
+  background: linear-gradient(45deg, #3B82F6, #1D4ED8);
+  border-color: #60A5FA;
+}
+
+.control-btn.primary:hover {
+  background: linear-gradient(45deg, #1D4ED8, #1E40AF);
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+}
+
+.control-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.canvas-area {
+  min-height: 500px;
+  position: relative;
+  background: 
+    radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+}
+
+.empty-canvas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.empty-icon {
+  margin-bottom: 1.5rem;
+  opacity: 0.6;
+  color: #60A5FA;
+}
+
+.empty-canvas p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.hint {
+  font-size: 1rem;
+  opacity: 0.8;
+  color: #60A5FA;
+}
+
+.circuit-components {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.circuit-component {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 1rem;
+  min-width: 140px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.circuit-component:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: #60A5FA;
+  transform: scale(1.05);
+}
+
+.circuit-component.input {
+  border-color: #34D399;
+  background: rgba(52, 211, 153, 0.15);
+}
+
+.circuit-component.output {
+  border-color: #FBBF24;
+  background: rgba(251, 191, 36, 0.15);
+}
+
+.circuit-component.processor,
+.circuit-component.logic {
+  border-color: #A78BFA;
+  background: rgba(167, 139, 250, 0.15);
+}
+
+.circuit-component .component-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.component-label {
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.component-status {
+  display: flex;
+  justify-content: center;
+}
+
+.status-light {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #374151;
+  transition: all 0.3s ease;
+}
+
+.status-light.active {
+  background: #34D399;
+  box-shadow: 0 0 15px rgba(52, 211, 153, 0.6);
+}
+
+.connection-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.challenge-hint {
+  background: rgba(59, 130, 246, 0.2);
+  border: 2px solid rgba(59, 130, 246, 0.4);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 1.5rem;
+}
+
+.challenge-hint h5 {
+  color: #60A5FA;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.challenge-hint p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Fase de Simulación */
+.testing-phase {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.simulation-dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sensor-readings,
+.ai-decisions,
+.actuator-states {
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.9));
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.sensor-readings h4,
+.ai-decisions h4,
+.actuator-states h4 {
+  color: #60A5FA;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+  padding-bottom: 1rem;
+}
+
+.sensor-data,
+.ai-data,
+.actuator-data {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sensor-reading,
+.ai-decision,
+.actuator-state {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(59, 130, 246, 0.1);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.sensor-name,
+.decision-name,
+.actuator-name {
+  color: #E2E8F0;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.sensor-value,
+.decision-value {
+  color: #60A5FA;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background: rgba(59, 130, 246, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.actuator-indicator {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.actuator-indicator.active {
+  color: #34D399;
+  background: rgba(52, 211, 153, 0.2);
+  border: 1px solid #34D399;
+}
+
+.actuator-indicator.inactive {
+  color: #94A3B8;
+  background: rgba(148, 163, 184, 0.1);
+  border: 1px solid #94A3B8;
+}
+
+.simulation-log {
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.9));
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  margin-bottom: 2rem;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.simulation-log h4 {
+  color: #60A5FA;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+  border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+  padding-bottom: 1rem;
+}
+
+.log-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.log-entry {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 10px;
+  font-size: 1rem;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.step-number {
+  color: #60A5FA;
+  font-weight: 700;
+  min-width: 80px;
+  background: rgba(59, 130, 246, 0.2);
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.log-description {
+  color: #E2E8F0;
+  font-weight: 500;
+}
+
+.simulation-progress {
+  text-align: center;
+  margin-top: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3B82F6, #60A5FA, #1D4ED8);
+  transition: width 0.3s ease;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.simulation-progress p {
+  color: #60A5FA;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Fase de Resultados */
+.results-phase {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.results-content {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  padding: 3rem 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.award-icon {
+  color: #FFD700;
+  margin-bottom: 1rem;
+}
+
+.challenge-results h3 {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.result-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.metric {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.metric-icon {
+  color: #3B82F6;
+}
+
+.metric-label {
+  flex: 1;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.metric-value {
+  color: #10B981;
+  font-weight: 600;
+}
+
+.final-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+.score-label {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.score-value {
+  color: #3B82F6;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.learned-concepts {
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.learned-concepts h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.learned-concepts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.learned-concepts li {
+  background: rgba(16, 185, 129, 0.2);
+  border-left: 4px solid #10B981;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.next-btn,
+.complete-btn,
+.retry-btn,
+.menu-btn {
+  background: linear-gradient(45deg, #3B82F6, #1D4ED8);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.next-btn:hover,
+.complete-btn:hover,
+.retry-btn:hover,
+.menu-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+.complete-btn {
+  background: linear-gradient(45deg, #10B981, #059669);
+}
+
+.retry-btn {
+  background: linear-gradient(45deg, #F59E0B, #D97706);
+}
+
+.menu-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .building-workspace {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+  
+  .components-panel {
+    order: 2;
+    max-height: 400px;
+  }
+  
+  .circuit-canvas {
+    order: 1;
+  }
+  
+  .simulation-dashboard {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .electronica-challenge {
+    padding: 0;
+  }
+  
+  .phase-header {
+    padding: 1rem;
+  }
+  
+  .phase-header h2, .phase-header h3 {
+    font-size: 2rem;
+  }
+  
+  .instruction-steps {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+  
+  .challenges-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+  
+  .challenge-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+  
+  .building-workspace {
+    padding: 0;
+  }
+  
+  .components-panel {
+    margin: 0 1rem;
+  }
+  
+  .circuit-canvas {
+    margin: 0 1rem;
+    border-radius: 15px;
+  }
+  
+  .canvas-header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .canvas-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .control-btn {
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .canvas-area {
+    min-height: 350px;
+  }
+  
+  .circuit-components {
+    height: 350px;
+  }
+  
+  .testing-phase {
+    padding: 1rem;
+  }
+  
+  .simulation-dashboard {
+    gap: 1rem;
+  }
+  
+  .sensor-readings,
+  .ai-decisions,
+  .actuator-states {
+    padding: 1.5rem;
+  }
+  
+  .simulation-log {
+    margin: 1rem 0;
+  }
+  
+  .metric {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .final-score {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .action-buttons {
+    gap: 0.75rem;
+  }
+  
+  .action-buttons button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

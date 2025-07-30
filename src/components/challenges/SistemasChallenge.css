@@ -1,0 +1,1611 @@
+/* SistemasChallenge.css - Professional IDE Style */
+.sistemas-challenge {
+  width: 100%;
+  min-height: calc(100vh - 140px);
+  margin: 0;
+  padding: 0;
+  background: #1e1e1e;
+  color: #cccccc;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+/* Instructions Phase - VS Code Welcome Style */
+.instructions-phase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 140px);
+  padding: 2rem;
+  background: #1e1e1e;
+}
+
+.instruction-card {
+  background: #252526;
+  color: #cccccc;
+  padding: 3rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border: 1px solid #3c3c3c;
+  max-width: 700px;
+  width: 90%;
+}
+
+.card-header {
+  margin-bottom: 2rem;
+}
+
+.code-icon {
+  color: #007acc;
+  margin-bottom: 1rem;
+}
+
+.card-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card-header p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin: 0;
+  line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.instruction-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  padding: 1rem;
+  background: #2d2d30;
+  border-radius: 6px;
+  border-left: 3px solid #007acc;
+}
+
+.step-number {
+  width: 32px;
+  height: 32px;
+  background: #007acc;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+}
+
+.step-content h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.step-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #cccccc;
+  font-weight: 400;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.start-sistemas-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  background: #007acc;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.start-sistemas-btn:hover {
+  background: #005a9e;
+  transform: translateY(-1px);
+}
+
+.start-sistemas-btn:active {
+  transform: translateY(0);
+}
+
+/* Training Phase */
+.training-phase {
+  padding: 2rem;
+  margin: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  color: #1F2937;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: none;
+  width: calc(100% - 4rem);
+}
+
+.training-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #1F2937;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.training-container > p {
+  text-align: center;
+  color: #374151;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.training-categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.category-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #1F2937;
+  font-weight: 700;
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.training-image {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.training-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.remove-button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  background: rgba(220, 38, 38, 0.9);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.add-image-button {
+  aspect-ratio: 1;
+  border: 2px dashed #D1D5DB;
+  background: #F9FAFB;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #6B7280;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.add-image-button:hover {
+  border-color: #4F46E5;
+  background: rgba(79, 70, 229, 0.05);
+  color: #4F46E5;
+}
+
+.training-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.train-button {
+  background: linear-gradient(135deg, #4F46E5, #7C3AED);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.train-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(79, 70, 229, 0.3);
+}
+
+.train-button:disabled {
+  background: #D1D5DB;
+  cursor: not-allowed;
+}
+
+.example-button {
+  background: #F3F4F6;
+  color: #6B7280;
+  border: 2px solid #E5E7EB;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.example-button:hover {
+  background: #E5E7EB;
+  color: #374151;
+}
+
+/* Training Progress */
+.training-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.progress-card {
+  background: rgba(255, 255, 255, 0.95);
+  color: #1F2937;
+  padding: 3rem;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+
+.robot-animation {
+  margin-bottom: 2rem;
+}
+
+.spinning {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.progress-card h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #4F46E5;
+  margin: 0 0 1rem 0;
+}
+
+.progress-card p {
+  color: #6B7280;
+  margin-bottom: 2rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #E5E7EB;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progress-fill {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #4F46E5, #7C3AED);
+  animation: progress 3s ease-in-out infinite;
+}
+
+@keyframes progress {
+  0%, 100% { transform: translateX(-100%); }
+  50% { transform: translateX(0%); }
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  color: #6B7280;
+  font-style: italic;
+}
+
+/* Testing Phase */
+.testing-phase {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  color: #1F2937;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.testing-container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #4F46E5;
+  margin-bottom: 0.5rem;
+}
+
+.testing-container > p {
+  text-align: center;
+  color: #6B7280;
+  margin-bottom: 2rem;
+}
+
+.test-progress {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.test-progress span {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.progress-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #E5E7EB;
+  transition: all 0.3s ease;
+}
+
+.dot.completed {
+  background: #22C55E;
+}
+
+.dot.current {
+  background: #4F46E5;
+  transform: scale(1.2);
+}
+
+.test-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.test-image {
+  text-align: center;
+}
+
+.test-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.test-image h3 {
+  font-size: 1.2rem;
+  color: #374151;
+  margin: 0;
+}
+
+.test-button {
+  background: linear-gradient(135deg, #4F46E5, #7C3AED);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.test-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(79, 70, 229, 0.3);
+}
+
+.test-results-preview {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.result-item.correct {
+  background: rgba(34, 197, 94, 0.1);
+  color: #22C55E;
+}
+
+.result-item.incorrect {
+  background: rgba(220, 38, 38, 0.1);
+  color: #DC2626;
+}
+
+/* Results Phase */
+.results-phase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.results-card {
+  background: rgba(255, 255, 255, 0.95);
+  color: #1F2937;
+  padding: 3rem;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 600px;
+  width: 100%;
+}
+
+.results-card h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #4F46E5;
+  margin-bottom: 2rem;
+}
+
+.accuracy-display {
+  margin-bottom: 2rem;
+}
+
+.accuracy-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4F46E5, #7C3AED);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: white;
+}
+
+.accuracy-value {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.accuracy-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.results-summary {
+  margin-bottom: 2rem;
+}
+
+.results-summary p {
+  font-size: 1.1rem;
+  color: #6B7280;
+}
+
+.detailed-results {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.result-detail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+}
+
+.result-detail img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.result-info {
+  flex: 1;
+  text-align: left;
+}
+
+.result-info h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.result-info p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #6B7280;
+}
+
+.result-status {
+  flex-shrink: 0;
+}
+
+.result-status .correct {
+  color: #22C55E;
+}
+
+.result-status .incorrect {
+  color: #DC2626;
+}
+
+.retry-button {
+  background: #F3F4F6;
+  color: #6B7280;
+  border: 2px solid #E5E7EB;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+}
+
+.retry-button:hover {
+  background: #E5E7EB;
+  color: #374151;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .instruction-card,
+  .training-phase,
+  .testing-phase,
+  .results-card {
+    padding: 2rem 1rem;
+    margin: 1rem;
+  }
+  
+  .training-categories {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+  
+  .start-options {
+    flex-direction: column;
+  }
+  
+  .test-image img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .detailed-results {
+    max-height: 200px;
+  }
+  
+  .result-detail {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* =======================
+   PROFESSIONAL IDE STYLES
+   ======================= */
+
+/* Main Coding Phase - VS Code Layout */
+.coding-phase {
+  height: calc(100vh - 140px);
+  background: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.ide-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #1e1e1e;
+  color: #cccccc;
+}
+
+/* IDE Header - Activity Bar + Title Bar */
+.ide-header {
+  height: 35px;
+  background: #2d2d30;
+  border-bottom: 1px solid #3c3c3c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  font-size: 13px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.exercise-tabs {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.tab {
+  height: 35px;
+  padding: 0 16px;
+  background: #2d2d30;
+  border: none;
+  color: #cccccc;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-family: 'Segoe UI', sans-serif;
+  border-bottom: 2px solid transparent;
+  position: relative;
+}
+
+.tab:hover {
+  background: #37373d;
+}
+
+.tab.active {
+  background: #1e1e1e;
+  border-bottom-color: #007acc;
+  color: #ffffff;
+}
+
+.tab.completed {
+  color: #4ec9b0;
+}
+
+.tab.completed svg {
+  color: #4ec9b0;
+}
+
+.score-display {
+  color: #cccccc;
+  font-size: 13px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  padding: 4px 8px;
+  background: #3c3c3c;
+  border-radius: 3px;
+}
+
+/* Exercise Description Bar */
+.exercise-description {
+  padding: 12px 16px;
+  background: #252526;
+  border-bottom: 1px solid #3c3c3c;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.exercise-description h3 {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.exercise-description p {
+  margin: 0;
+  font-size: 12px;
+  color: #cccccc;
+}
+
+/* IDE Workspace - Split Layout */
+.ide-workspace {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px;
+  background: #3c3c3c;
+  overflow: hidden;
+}
+
+/* Code Editor Panel */
+.code-editor {
+  background: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.editor-header {
+  height: 35px;
+  background: #252526;
+  border-bottom: 1px solid #3c3c3c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  font-size: 13px;
+}
+
+.editor-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #cccccc;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 13px;
+}
+
+.editor-title svg {
+  color: #519aba;
+}
+
+.file-indicator {
+  color: #cccccc;
+  font-size: 10px;
+  margin-left: 2px;
+}
+
+.editor-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Editor Content with Line Numbers */
+.editor-content {
+  flex: 1;
+  display: flex;
+  background: #1e1e1e;
+  overflow: hidden;
+}
+
+.line-numbers {
+  width: 50px;
+  background: #1e1e1e;
+  border-right: 1px solid #3c3c3c;
+  padding: 16px 8px 16px 0;
+  text-align: right;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #858585;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.line-number {
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+
+/* Code Editor Wrapper for Syntax Highlighting */
+.code-editor-wrapper {
+  flex: 1;
+  position: relative;
+  background: #1e1e1e;
+}
+
+/* Code Input Area */
+.code-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent !important;
+  color: transparent !important;
+  caret-color: #ffffff !important;
+  border: none;
+  padding: 16px 0 16px 16px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  resize: none;
+  outline: none;
+  tab-size: 4;
+  white-space: pre;
+  overflow-wrap: normal;
+  overflow-x: auto;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+.code-input::placeholder {
+  color: #6a9955 !important;
+  font-style: italic;
+}
+
+.code-input::selection {
+  background: rgba(0, 122, 204, 0.3) !important;
+}
+
+/* Syntax Highlighting Overlay */
+.code-highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px 0 16px 16px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre;
+  overflow-wrap: normal;
+  overflow-x: auto;
+  overflow-y: auto;
+  pointer-events: none;
+  z-index: 1;
+  color: #d4d4d4 !important; /* Color base del texto forzado */
+  background: transparent;
+}
+
+.code-line {
+  min-height: 21px;
+  display: flex;
+  align-items: flex-start;
+  color: #d4d4d4 !important; /* Color por defecto para texto sin resaltar forzado */
+}
+
+/* Asegurar que los spans internos hereden el color */
+.code-line span {
+  color: inherit;
+}
+
+/* Python Syntax Highlighting Colors */
+.syntax-keyword {
+  color: #569cd6; /* Azul para palabras clave */
+  font-weight: 500;
+}
+
+.syntax-string {
+  color: #ce9178; /* Naranja claro para strings */
+}
+
+.syntax-comment {
+  color: #6a9955; /* Verde para comentarios */
+  font-style: italic;
+}
+
+.syntax-number {
+  color: #b5cea8; /* Verde claro para números */
+}
+
+.syntax-function {
+  color: #dcdcaa; /* Amarillo para funciones */
+  font-weight: 500;
+}
+
+.syntax-operator {
+  color: #d4d4d4; /* Blanco para operadores */
+}
+
+.syntax-bracket {
+  color: #ffd700; /* Oro para brackets */
+  font-weight: 600;
+}
+
+.syntax-variable {
+  color: #9cdcfe; /* Azul claro para variables */
+}
+
+/* Scrollbar personalizado para el editor */
+.code-input::-webkit-scrollbar,
+.code-highlight::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+.code-input::-webkit-scrollbar-track,
+.code-highlight::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.code-input::-webkit-scrollbar-thumb,
+.code-highlight::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 7px;
+  border: 2px solid #1e1e1e;
+}
+
+.code-input::-webkit-scrollbar-thumb:hover,
+.code-highlight::-webkit-scrollbar-thumb:hover {
+  background: #4f4f4f;
+}
+
+.code-input::-webkit-scrollbar-corner,
+.code-highlight::-webkit-scrollbar-corner {
+  background: #1e1e1e;
+}
+
+/* Mejorar la sincronización del scroll */
+.code-editor-wrapper {
+  overflow: hidden;
+}
+
+/* Efecto de cursor en el editor */
+.code-input:focus {
+  caret-color: #ffffff;
+}
+
+/* Indicador de línea actual */
+.code-line:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Animación suave para cambios de sintaxis */
+.syntax-keyword,
+.syntax-string,
+.syntax-comment,
+.syntax-number,
+.syntax-function,
+.syntax-operator,
+.syntax-bracket {
+  transition: color 0.1s ease;
+}
+
+/* Output Panel Enhancements */
+.output-header {
+  height: 35px;
+  background: #252526;
+  border-bottom: 1px solid #3c3c3c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 0 12px;
+  font-size: 13px;
+  color: #cccccc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.output-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.clear-btn {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  color: #858585;
+  cursor: pointer;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.clear-btn:hover {
+  background: #3c3c3c;
+  color: #cccccc;
+}
+
+.terminal-prompt {
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.terminal-welcome {
+  color: #cccccc;
+}
+
+.prompt {
+  color: #007acc;
+  font-weight: 500;
+}
+
+.cursor {
+  color: #ffffff;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.help-text {
+  color: #6a9955;
+  font-style: italic;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.ai-optimize-btn, .run-btn {
+  height: 28px;
+  padding: 0 12px;
+  border: 1px solid #3c3c3c;
+  background: #0e639c;
+  color: #ffffff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+}
+
+.ai-optimize-btn {
+  background: #1f1f23;
+  color: #d4d4aa;
+  border-color: #524c42;
+  position: relative;
+}
+
+.ai-optimize-btn::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: linear-gradient(45deg, #ff6b35, #f7931e, #ff6b35);
+  border-radius: 3px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.ai-optimize-btn:hover {
+  background: #2d2d30;
+  border-color: #656565;
+  transform: translateY(-1px);
+}
+
+.ai-optimize-btn:hover::before {
+  opacity: 0.1;
+}
+
+/* Estado deshabilitado del botón AI */
+.ai-optimize-btn:disabled {
+  background: #3c3c3c;
+  color: #858585;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  border-color: #3c3c3c;
+}
+
+.ai-optimize-btn:disabled::before {
+  display: none;
+}
+
+/* Animación de escritura */
+.ai-optimize-btn:disabled svg,
+.ai-optimize-btn.typing svg {
+  animation: typing 1.5s ease-in-out infinite;
+}
+
+.ai-optimize-btn.typing {
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  color: white;
+  border-color: #ff6b35;
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+}
+
+.ai-optimize-btn.typing::before {
+  display: none;
+}
+
+@keyframes typing {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.run-btn:hover:not(:disabled) {
+  background: #1177bb;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 122, 204, 0.3);
+}
+
+.run-btn:disabled {
+  background: #3c3c3c;
+  color: #858585;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Code Input Area */
+.code-input {
+  flex: 1;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  border: none;
+  padding: 16px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  resize: none;
+  outline: none;
+  tab-size: 4;
+  white-space: pre;
+  overflow-wrap: normal;
+}
+
+.code-input::placeholder {
+  color: #6a9955;
+  font-style: italic;
+}
+
+/* Line numbers simulation */
+.code-input:focus {
+  background: #1e1e1e;
+}
+
+/* Output Panel */
+.output-panel {
+  background: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.output-header {
+  height: 35px;
+  background: #252526;
+  border-bottom: 1px solid #3c3c3c;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  font-size: 13px;
+  color: #cccccc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.output-header svg {
+  color: #cccccc;
+}
+
+.output-content {
+  flex: 1;
+  padding: 16px;
+  background: #1e1e1e;
+  overflow-y: auto;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.output-content pre {
+  margin: 0;
+  color: #d4d4d4;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Estilos para el output del terminal */
+.output-content .terminal-prompt {
+  color: #d4d4d4;
+}
+
+.output-content .terminal-prompt .prompt {
+  color: #007acc;
+  font-weight: 500;
+}
+
+/* Resaltado de errores en el terminal */
+.output-content pre:has-text("❌"),
+.output-content pre:contains("Error") {
+  color: #f48771;
+}
+
+/* Resaltado de éxito en el terminal */
+.output-content pre:has-text("✅"),
+.output-content pre:contains("Resultado") {
+  color: #4ec9b0;
+}
+
+/* Colores específicos para output de Python */
+.output-content {
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.output-content pre {
+  margin: 0;
+  color: #d4d4d4;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Estilo para números en el output */
+.output-content pre {
+  /* Números en cyan */
+  background: linear-gradient(to right, 
+    transparent 0%, 
+    transparent 100%);
+}
+
+/* Mejorar la legibilidad del terminal */
+.terminal-welcome .help-text {
+  color: #6a9955;
+  font-style: italic;
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Challenge Progress Panel */
+.challenge-progress {
+  padding: 12px 16px;
+  background: #252526;
+  border-top: 1px solid #3c3c3c;
+  display: flex;
+  gap: 24px;
+  font-size: 12px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.progress-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #cccccc;
+}
+
+.completed {
+  color: #4ec9b0;
+  font-weight: 500;
+}
+
+.pending {
+  color: #ffd700;
+}
+
+/* Finish Button */
+.finish-btn {
+  margin: 16px;
+  padding: 12px 24px;
+  background: #007acc;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+  align-self: center;
+}
+
+.finish-btn:hover {
+  background: #005a9e;
+}
+
+/* Results Phase - VS Code Theme */
+.results-phase {
+  padding: 32px;
+  background: #1e1e1e;
+  min-height: calc(100vh - 140px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.results-card {
+  background: #252526;
+  border: 1px solid #3c3c3c;
+  border-radius: 8px;
+  padding: 32px;
+  max-width: 800px;
+  width: 100%;
+  color: #cccccc;
+  text-align: center;
+}
+
+.results-card h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 24px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+}
+
+.final-score {
+  margin: 24px 0;
+}
+
+.score-circle {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border: 4px solid #007acc;
+  border-radius: 50%;
+  background: #2d2d30;
+}
+
+.score-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4ec9b0;
+  font-family: 'Consolas', monospace;
+}
+
+.score-label {
+  font-size: 0.9rem;
+  color: #cccccc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.results-summary h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin: 24px 0 16px 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+}
+
+.exercise-results {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px 0 24px 0;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #2d2d30;
+  border-radius: 6px;
+  border-left: 4px solid transparent;
+}
+
+.result-item.completed {
+  border-left-color: #4ec9b0;
+}
+
+.result-item.incomplete {
+  border-left-color: #f48771;
+}
+
+.result-info {
+  flex: 1;
+  text-align: left;
+}
+
+.result-info h4 {
+  margin: 0 0 4px 0;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+}
+
+.result-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #cccccc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.points {
+  font-family: 'Consolas', monospace;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.result-item.completed .points {
+  color: #4ec9b0;
+}
+
+.result-item.incomplete .points {
+  color: #858585;
+}
+
+.success {
+  color: #4ec9b0;
+}
+
+.error {
+  color: #f48771;
+}
+
+/* Learning Summary */
+.learning-summary {
+  margin: 24px 0;
+  text-align: left;
+}
+
+.learning-summary h3 {
+  text-align: center;
+}
+
+.learning-summary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 8px;
+}
+
+.learning-summary li {
+  padding: 8px 12px;
+  background: #2d2d30;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #4ec9b0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Retry Button */
+.retry-button {
+  padding: 12px 24px;
+  background: #0e639c;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+.retry-button:hover {
+  background: #1177bb;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .ide-workspace {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .exercise-tabs {
+    overflow-x: auto;
+  }
+  
+  .challenge-progress {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ide-header {
+    padding: 0 8px;
+  }
+  
+  .editor-header {
+    padding: 0 8px;
+  }
+  
+  .output-header {
+    padding: 0 8px;
+  }
+  
+  .code-input {
+    padding: 12px;
+    font-size: 13px;
+  }
+  
+  .output-content {
+    padding: 12px;
+    font-size: 12px;
+  }
+  
+  .results-card {
+    padding: 16px;
+    margin: 16px;
+  }
+  
+  .learning-summary ul {
+    grid-template-columns: 1fr;
+  }
+}
