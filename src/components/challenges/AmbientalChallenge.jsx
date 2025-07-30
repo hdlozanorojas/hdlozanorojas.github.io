@@ -434,6 +434,26 @@ const AmbientalChallenge = ({ onComplete, onScoreChange }) => {
             </div>
           </div>
 
+          <div className="detailed-instructions">
+            <h4>Instrucciones Detalladas</h4>
+            <div className="instruction-step">
+              <h5>Paso 1: Análisis</h5>
+              <p>Observa el mapa para identificar zonas críticas con alta contaminación (rojas) y residuos acumulados.</p>
+            </div>
+            <div className="instruction-step">
+              <h5>Paso 2: Sensores</h5>
+              <p>Coloca hasta 6 sensores en ubicaciones estratégicas para monitoreo óptimo del ecosistema.</p>
+            </div>
+            <div className="instruction-step">
+              <h5>Paso 3: Rutas</h5>
+              <p>Diseña hasta 8 puntos de ruta conectando áreas de alta prioridad de manera eficiente.</p>
+            </div>
+            <div className="instruction-step">
+              <h5>Paso 4: Optimización</h5>
+              <p>Usa la IA para perfeccionar tu estrategia y maximizar el impacto ambiental positivo.</p>
+            </div>
+          </div>
+
           <div className="start-options">
             <button
               className="start-ambiental-btn primary"
