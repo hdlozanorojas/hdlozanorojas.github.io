@@ -80,7 +80,7 @@ src/
 
 ## 🌐 URL de Acceso
 
-La aplicación está desplegada en: [https://hdlozanorojas.github.io/hdlozanorojas.github.io/](https://hdlozanorojas.github.io/hdlozanorojas.github.io/)
+La aplicación está desplegada en: [https://hdlozanorojas.github.io/](https://hdlozanorojas.github.io/)
 
 ## 📄 Licencia
 

@@ -6,7 +6,7 @@
 ```javascript
 export default defineConfig({
   plugins: [react()],
-  base: '/hdlozanorojas.github.io/', // Ruta base para GitHub Pages
+  base: '/', // Ruta base para repositorio de usuario GitHub Pages
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
@@ -26,7 +26,7 @@ export default defineConfig({
 ```
 
 ### 3. **Configuración del Router** (`src/App.jsx`)
-- Agregado `basename="/hdlozanorojas.github.io"` al BrowserRouter
+- Agregado `basename="/"` al BrowserRouter (para repositorio de usuario)
 
 ### 4. **GitHub Actions** (`.github/workflows/deploy.yml`)
 - Despliegue automático en cada push a `main`
@@ -64,7 +64,7 @@ npm run deploy
 ## 🌐 URLs de Acceso
 
 - **Desarrollo**: `http://localhost:5173/`
-- **Producción**: `https://hdlozanorojas.github.io/hdlozanorojas.github.io/`
+- **Producción**: `https://hdlozanorojas.github.io/`
 
 ## 📋 Verificaciones Necesarias
 
